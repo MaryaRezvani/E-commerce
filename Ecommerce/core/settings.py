@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
     'accounts.apps.AccountsConfig',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 AUTH_USER_MODEL = 'accounts.User'
+
+#ARVAN CLOUD STORAGE
+DEFAULT_FILLE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
