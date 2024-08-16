@@ -5,6 +5,12 @@
     <small>{{ product.created }}</small><br/>
     <p>{{ product.price }} dollar</p>
     <img src="{{ product.image.url }}" alt="" style="width: 300px;">
-    <p>{{ product.description }}</p>
+    <p>{{ product.description }}</p><br/><br/>
+    <form action="{% url 'orders:cart_add' product.id %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="add to cart">
+
+    </form>
 
 {% endblock %}
