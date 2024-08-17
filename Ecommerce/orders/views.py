@@ -1,4 +1,3 @@
-from typing import LiteralString
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.shortcuts import render,get_object_or_404, redirect
@@ -62,7 +61,7 @@ class OrderCreateView(LoginRequiredMixin, View):
 MERCHANT = 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
 ZP_API_REQUEST = f"https://api.zarinpal.com/pg/rest/WebGate/PaymentRequest.json"
 ZP_API_VERIFY = f"https://api.zarinpal.com/pg/rest/WebGate/PaymentVerification.json"
-ZP_API_STARTPAY: LiteralString = f"https://www.zarinpal.com/pg/StartPay/"
+ZP_API_STARTPAY = f"https://www.zarinpal.com/pg/StartPay/"
 
 description = "توضیحات مربوط به تراکنش را در این قسمت وارد کنید"  # Required
 CallbackURL = 'http://127.0.0.1:8000/orders/verify/'
