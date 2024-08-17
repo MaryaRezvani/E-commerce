@@ -8,4 +8,5 @@ celery==5.4.0
 hiredis==3.0.0
 redis==5.0.8
 psycopg2-binary==2.9.9
+django-ckeditor==6.7.1
 

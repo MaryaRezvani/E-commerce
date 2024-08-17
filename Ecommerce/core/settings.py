@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     # Third-party apps
     'storages',
+    'ckeditor',
 
 ]
 
@@ -165,3 +166,10 @@ AUTH_USER_MODEL = 'accounts.User'
 
 #ARVAN CLOUD STORAGE
 DEFAULT_FILLE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+    },
+}
