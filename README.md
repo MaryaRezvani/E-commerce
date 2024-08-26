@@ -66,13 +66,7 @@ sudo systemctl enable redis
 sudo systemctl start redis
 sudo systemctl status redis
 redis-cli
-```
-
-### Screenshots
-
-- **Home Page**
-  ![Home Page](![image](https://github.com/user-attachments/assets/2c541170-62a2-447e-ae11-d8e61c052a01))
-  
+```  
 
 ### Contributing
 If you want to contribute to this project, please follow these steps:
